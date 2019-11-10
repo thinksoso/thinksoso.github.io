@@ -50,17 +50,18 @@
   };
 </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+  <meta name="description" content="从零安装pytorch及相关实验室的一台工作站装了$$Win 10$$和$$Ubuntu$$双系统，正好最近要开始学习机器学习，就拿过来用用（其实因为正好就在我座位上），配置是英特尔至强处理器，16G内存，2T硬盘，显卡没注意，配置在工作站里比较过时，但是比我的渣笔记本已经强很多了。">
+<meta name="keywords" content="装环境">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https:&#x2F;&#x2F;thinksoso.github.io&#x2F;2019&#x2F;10&#x2F;27&#x2F;hello-world&#x2F;index.html">
+<meta property="og:title" content="ubuntu安装pytorch">
+<meta property="og:url" content="https:&#x2F;&#x2F;thinksoso.github.io&#x2F;2019&#x2F;11&#x2F;10&#x2F;ubuntu%E5%AE%89%E8%A3%85pytorch&#x2F;index.html">
 <meta property="og:site_name" content="Thinksoso的自留地">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="从零安装pytorch及相关实验室的一台工作站装了$$Win 10$$和$$Ubuntu$$双系统，正好最近要开始学习机器学习，就拿过来用用（其实因为正好就在我座位上），配置是英特尔至强处理器，16G内存，2T硬盘，显卡没注意，配置在工作站里比较过时，但是比我的渣笔记本已经强很多了。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-27T01:29:05.730Z">
+<meta property="og:updated_time" content="2019-11-10T13:15:54.781Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://thinksoso.github.io/2019/10/27/hello-world/">
+<link rel="canonical" href="https://thinksoso.github.io/2019/11/10/ubuntu%E5%AE%89%E8%A3%85pytorch/">
 
 
 <script id="page-configurations">
@@ -74,7 +75,7 @@
   };
 </script>
 
-  <title>Hello World | Thinksoso的自留地</title>
+  <title>ubuntu安装pytorch | Thinksoso的自留地</title>
   
 
 
@@ -185,7 +186,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://thinksoso.github.io/2019/10/27/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://thinksoso.github.io/2019/11/10/ubuntu%E5%AE%89%E8%A3%85pytorch/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/r.jpg">
@@ -198,7 +199,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          ubuntu安装pytorch
         </h1>
 
         <div class="post-meta">
@@ -207,8 +208,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-10-27 09:29:05" itemprop="dateCreated datePublished" datetime="2019-10-27T09:29:05+08:00">2019-10-27</time>
+              <time title="创建时间：2019-11-10 18:55:26 / 修改时间：21:15:54" itemprop="dateCreated datePublished" datetime="2019-11-10T18:55:26+08:00">2019-11-10</time>
             </span>
 
           
@@ -227,8 +229,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/2019/10/27/hello-world/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/10/27/hello-world/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2019/11/10/ubuntu%E5%AE%89%E8%A3%85pytorch/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/11/10/ubuntu安装pytorch/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -238,7 +240,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>357</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -257,19 +259,49 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="从零安装pytorch及相关"><a href="#从零安装pytorch及相关" class="headerlink" title="从零安装pytorch及相关"></a>从零安装pytorch及相关</h1><p>实验室的一台工作站装了$$Win 10$$和$$Ubuntu$$双系统，正好最近要开始学习机器学习，就拿过来用用（其实因为正好就在我座位上），配置是英特尔至强处理器，16G内存，2T硬盘，显卡没注意，配置在工作站里比较过时，但是比我的渣笔记本已经强很多了。</p><a id="more"></a>
+<p>不出意外的是装环境过程中又碰到各种坑，特此记录下。</p>
+<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>安装</p>
+<ul>
+<li>anaconda (python的包管理工具)</li>
+<li>pytorch （机器学习框架，Fackbook开发，和tenserflow相比胜在灵活高效）</li>
+<li>jupyter notebook （一款可以运行代码并显示结果的markdown编辑器，适合数据分析）</li>
+<li>sublime以及python插件</li>
+</ul>
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><h3 id="联网以及翻墙问题"><a href="#联网以及翻墙问题" class="headerlink" title="联网以及翻墙问题"></a>联网以及翻墙问题</h3><p>这次的各种问题主要出在代理上面，后面还会提到</p>
+<blockquote>
+<p>网口坏掉了，所以找朋友借了一个无线网卡，先是计划手机开热点，然后在手机上挂梯子，后来发现手机热点网速慢而且时间长了手机有点发热，改用连接校园网然后在Ubuntu上安装代理 V2ray。</p>
+</blockquote>
+<p>首先要明确V2ray由两部分组成：</p>
+<ul>
+<li>客户端</li>
+<li>服务器端</li>
+</ul>
+<p>如果你是买的梯子需要用V2ray连，显然应该安装的是客户端。</p>
+<p>windows上的V2ray是GUI版本，Linux上的官方是命令行形式的，一开始为了追求在win10上的体验各种寻觅尝试V2rayL，V2rayN而不得，最后还是选择github官方版本成功的。</p>
+<p>具体过程建议找找视频来看，各种教程不一而足。安装文件中config.json就用从windows中导出的就好，需要注意的V2ray走的是<strong>socks5</strong>，暂时只导出一个服务器的配置，以后研究怎么增加订阅，设置多个节点，V2rayL似乎可以做到这个，但是之前只下了V2rayL不能用，不知道是不是要和官方版本结合。</p>
+<h3 id="安装anaconda"><a href="#安装anaconda" class="headerlink" title="安装anaconda"></a>安装anaconda</h3><p>从官网下载对应版本然后安装就好，这一步是为了利用conda安装pytorch。</p>
+<p>安装之后提示 找不到conda指令，</p>
+<p>原来是上一届的学长shell用的是zsh，所以安装之后还要配路径，改.zshrc，找了一下并没有.zshrc</p>
+<p>不知道学长装在哪了，只好自己新建一个。</p>
+<blockquote>
+<p>anaconda用法说明</p>
+<p>安装包 conda install 包名</p>
+<p>卸载包 conda remove 包名</p>
+<p>更新包 conda update 包名</p>
+<p>conda也可以新建一个环境，并制定python版本和安装的包，详细看教程</p>
+</blockquote>
+<h3 id="安装pytorch"><a href="#安装pytorch" class="headerlink" title="安装pytorch"></a>安装pytorch</h3><p>按官网的方法，命令行输入<code>conda install pytorch torchvision cpuonly -c pytorch</code></p>
+<p>（我没有选择gpu，选择gpu似乎还要装cura，暂时用不着）</p>
+<p>发现报错，具体原始是无法识别socks5代理版本，利用<code>export all_proxy=&quot;socks5://127.0.0.1:1080&quot;</code>解决</p>
+<p>（注意不是http而是sock5）</p>
+<p>最后打开python , import torch 未报错，安装成功</p>
+<h3 id="安装Jupyter-notebook"><a href="#安装Jupyter-notebook" class="headerlink" title="安装Jupyter notebook"></a>安装Jupyter notebook</h3><blockquote>
+<p>anaconda自带Jupyter notebook</p>
+<p>我会另起一篇讲怎么使用</p>
+</blockquote>
+<h3 id="安装sublime"><a href="#安装sublime" class="headerlink" title="安装sublime"></a>安装sublime</h3><p>建议直接下载deb版本本机安装，Ubuntu的软件商店真的超级慢</p>
+<p>下载后装python插件就好了</p>
 
     </div>
 
@@ -278,18 +310,24 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%A3%85%E7%8E%AF%E5%A2%83/" rel="tag"># 装环境</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
+                <a href="/2019/10/27/first/" rel="next" title="first">
+                  <i class="fa fa-chevron-left"></i> first
+                </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/10/27/first/" rel="prev" title="first">
-                  first <i class="fa fa-chevron-right"></i>
+                <a href="/2019/11/10/Jupyter-notebook%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev" title="Jupyter notebook的使用">
+                  Jupyter notebook的使用 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -336,7 +374,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#从零安装pytorch及相关"><span class="nav-number">1.</span> <span class="nav-text">从零安装pytorch及相关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#目标"><span class="nav-number">1.1.</span> <span class="nav-text">目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过程"><span class="nav-number">1.2.</span> <span class="nav-text">过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#联网以及翻墙问题"><span class="nav-number">1.2.1.</span> <span class="nav-text">联网以及翻墙问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装anaconda"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装anaconda</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装pytorch"><span class="nav-number">1.2.3.</span> <span class="nav-text">安装pytorch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Jupyter-notebook"><span class="nav-number">1.2.4.</span> <span class="nav-text">安装Jupyter notebook</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装sublime"><span class="nav-number">1.2.5.</span> <span class="nav-text">安装sublime</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -509,9 +547,9 @@
       DISQUS.reset({
         reload: true,
         config: {page: {
-            url: "https://thinksoso.github.io/2019/10/27/hello-world/",
-            identifier: "2019/10/27/hello-world/",
-            title: "Hello World"
+            url: "https://thinksoso.github.io/2019/11/10/ubuntu%E5%AE%89%E8%A3%85pytorch/",
+            identifier: "2019/11/10/ubuntu安装pytorch/",
+            title: "ubuntu安装pytorch"
           }
         }
       });
