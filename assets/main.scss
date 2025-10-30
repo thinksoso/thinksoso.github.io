@@ -1,0 +1,13 @@
+---
+---
+@import "minima";
+
+// Config-driven typography (values from _config.yml via Liquid)
+$about-base-font-size: {{ site.custom.typography.about.base_font_size | default: '20px' }};
+$about-title-font-size: {{ site.custom.typography.about.title_font_size | default: '32px' }};
+
+$blog-base-font-size: {{ site.custom.typography.blog.base_font_size | default: '20px' }};
+$blog-title-font-size: {{ site.custom.typography.blog.title_font_size | default: '28px' }};
+$blog-list-font-size: {{ site.custom.typography.blog.list_font_size | default: '20px' }};
+
+@import "custom";

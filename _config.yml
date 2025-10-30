@@ -1,0 +1,62 @@
+# Site basic information
+# Note: url must match your user page address
+# User page (baseurl left empty), project page (baseurl needs to be set).
+
+title: Chi Liu
+# description: 
+# url: "https://thinksoso.github.io"
+# baseurl: "" # User page must be empty
+lang: en
+timezone: Asia/Shanghai
+
+# GitHub Pages natively supported themes (clean appearance, suitable for beginners)
+theme: minima
+
+# Pages to display in top navigation (add or remove as needed)
+header_pages:
+  - index.md
+  - blog.md
+
+# Minima theme settings
+minima:
+  skin: auto
+  # Force English language
+  date_format: "%b %-d, %Y"
+
+# Custom CSS
+sass:
+  style: compressed
+  sass_dir: _sass
+  
+# # Social links (will appear in the site header/footer)
+# social:
+#   name: 
+#   links:
+#     - https://github.com/thinksoso
+#     - https://scholar.google.com  # Replace with actual Google Scholar link
+
+# Common plugins (within GitHub Pages supported whitelist)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Author information (used by minima)
+# author:
+#   name: 
+#   email: hello.liuchi@gmail.com
+#   # Add social like this:
+#   github: thinksoso
+
+permalink: /:categories/:title/
+
+# Custom site configuration (typography controls)
+custom:
+  typography:
+    about:
+      base_font_size: "20px"      # About page base font size
+      title_font_size: "32px"     # About page title size
+    blog:
+      base_font_size: "20px"       # Blog page base font size
+      title_font_size: "28px"      # Blog page title size
+      list_font_size: "20px"       # Blog list item links
